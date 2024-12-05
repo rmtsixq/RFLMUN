@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFLMUN Kayıt Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RFLMUN</h1>
+        <p>Kayıt Sistemi</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Hoş Geldiniz!</h2>
+            <p>RFLMUN etkinliğine katılmak için aşağıdaki formu doldurabilirsiniz.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Kayıt Formu</h2>
+            <form action="https://formsubmit.co/youremail@example.com" method="POST">
+                <label for="name">Adınız Soyadınız:</label>
+                <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required>
+                
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" placeholder="E-posta adresiniz" required>
+                
+                <label for="school">Okulunuz:</label>
+                <input type="text" id="school" name="school" placeholder="Okulunuz">
+                
+                <label for="committee">Komite Tercihiniz:</label>
+                <select id="committee" name="committee">
+                    <option value="Komite 1">Komite 1</option>
+                    <option value="Komite 2">Komite 2</option>
+                    <option value="Komite 3">Komite 3</option>
+                </select>
+
+                <label for="message">Ek Notlar:</label>
+                <textarea id="message" name="message" placeholder="Eklemek istediğiniz notlar"></textarea>
+                
+                <button type="submit">Kaydol</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 RFLMUN. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
